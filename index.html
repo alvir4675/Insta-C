@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <main>
+        <section class="container1">
+            <nav>
+                <div class="banner">
+                    <div class="logo">
+                        <svg width="144" height="72" viewBox="0 0 144 72" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <rect width="144" height="72" fill="url(#pattern0_1_12)"/>
+                            <defs>
+                            <pattern id="pattern0_1_12" patternContentUnits="objectBoundingBox" width="1" height="1">
+                            <use xlink:href="#image0_1_12" transform="scale(0.005 0.01)"/>
+                            </pattern>
+                            <image id="image0_1_12" width="200" height="100" xlink:href="data:image/png;base64,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"/>
+                            </defs>
+                            </svg>                        
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <li>
+                                <a href="#">Home</a>
+                            </li>
+                            <li>
+                                <a href="#">Our Products</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact Us</a>
+                            </li>
+                            <li>
+                                <a href="#">FAQs</a>
+                            </li>
+                    </div>
+                    <div class="icons">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 21L15 15L21 21ZM17 10C17 10.9193 16.8189 11.8295 16.4672 12.6788C16.1154 13.5281 15.5998 14.2997 14.9497 14.9497C14.2997 15.5998 13.5281 16.1154 12.6788 16.4672C11.8295 16.8189 10.9193 17 10 17C9.08075 17 8.1705 16.8189 7.32122 16.4672C6.47194 16.1154 5.70026 15.5998 5.05025 14.9497C4.40024 14.2997 3.88463 13.5281 3.53284 12.6788C3.18106 11.8295 3 10.9193 3 10C3 8.14348 3.7375 6.36301 5.05025 5.05025C6.36301 3.7375 8.14348 3 10 3C11.8565 3 13.637 3.7375 14.9497 5.05025C16.2625 6.36301 17 8.14348 17 10Z" stroke="#4B4B4B" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+    
+    
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 3H5L5.4 5M5.4 5H21L17 13H7M5.4 5L7 13M7 13L4.707 15.293C4.077 15.923 4.523 17 5.414 17H17M17 17C16.4696 17 15.9609 17.2107 15.5858 17.5858C15.2107 17.9609 15 18.4696 15 19C15 19.5304 15.2107 20.0391 15.5858 20.4142C15.9609 20.7893 16.4696 21 17 21C17.5304 21 18.0391 20.7893 18.4142 20.4142C18.7893 20.0391 19 19.5304 19 19C19 18.4696 18.7893 17.9609 18.4142 17.5858C18.0391 17.2107 17.5304 17 17 17ZM9 19C9 19.5304 8.78929 20.0391 8.41421 20.4142C8.03914 20.7893 7.53043 21 7 21C6.46957 21 5.96086 20.7893 5.58579 20.4142C5.21071 20.0391 5 19.5304 5 19C5 18.4696 5.21071 17.9609 5.58579 17.5858C5.96086 17.2107 6.46957 17 7 17C7.53043 17 8.03914 17.2107 8.41421 17.5858C8.78929 17.9609 9 18.4696 9 19Z" stroke="#4B4B4B" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>   
+                    </div>
+    
+                    <div class="button">
+                        <button>
+                            Sign In
+                        </button>
+                    </div>
+                </div>
+            </nav>
+        </section>
+        <section class="container1">
+            <div class="mptxt">
+                <div class="leftHP">
+                    <h1>Collect Real & Organic <span>Instagram</span> Followers</h1>
+                    <p>We're the only service in the world that provides you with likes from real people. Try our free trial and see for yourself.</p>
+                    <div class="button">
+                        <button>
+                            Get Started
+                        </button>
+                    </div>
+                </div>
+                <div class="rightIMG">
+                    <div class="smartphone">
+                        <img src="./img/Group 13.png" alt="">
+                    </div>
+                    <div class="commentimg">
+                        <img src="./img/Group 17.png" alt="">
+                    </div>
+                    <div class="glitter">
+                        <img src="./img/XMLID_3_.png" alt="">
+                    </div>
+                    <div class="chickimg">
+                        <img src="./img/Group 21.png" alt="">
+                    </div>
+                    <div class="heart">
+                        <img src="./img/Group 18 {2}.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="board">
+                <div class="ilh3">
+                    <h3>Instagram 
+                        Likes</h3>
+                </div>
+                <div class="M13h3p">
+                    <h3>13.68M</h3>
+                    <p>Likes Given</p>
+                </div>
+                <div class="K12h3p">
+                    <h3>12.74K</h3>
+                    <p>Happy Clients</p>
+                </div>
+                <div class="k3h3p">
+                    <h3>3.56K</h3>
+                    <p>Became Famous</p>
+                </div>
+                <div class="pattern1">
+                    <img src="./img/XMLID_3_.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="container1">
+            <div class="page3">
+                   <div class="texting">
+                    <h3>How Pump Insta Work</h3>
+                    <p>However, if they see other members in their social network actively participating, 
+                        it makes investing time into a social media profile both fun and easy. Pump Insta is here to help! Buy Instagram followers, likes and views that are delivered instantly and safely.</p>
+                   </div>
+            </div>
+            <div class="fetcom">
+                <div class="fet1">
+                    <div class="logo1">
+                        <img src="./img/Vector.png" alt="" id="no1">
+                        <img src="./img/Vector2.png" alt="" id="no2">
+                    </div>
+                    <div class="des1">
+                        <h4 id="h41">Pick a package</h4>
+                        <p id="p1">Choose the Instagram likes, followers, or views package that you're interested in. Feel free to get in touch if you have an inquiry about a bulk order.</p>
+                    </div>
+                </div>
+                <div class="fet2">
+                    <div class="logo2">
+                        <img src="./img/2332.png" alt="">
+                    </div>
+                    <div class="des2">
+                        <h4 id="h41">Enter Details</h4>
+                        <p id="p1">We will never ask you for sensitive details such as your password. All you have to do is provide us with your Instagram username and leave the rest to us!</p>
+                    </div>
+                </div>
+                <div class="fet3">
+                    <div class="logo2">
+                        <img src="./img/Frame.png" alt="">
+                    </div>
+                    <div class="des3">
+                        <h4 id="h41">See the growth</h4>
+                        <p id="p1">All orders start within a few minutes, so you'll see growth in your Instagram account very quickly. We've made the process super easy.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="video">
+                <img src="./img/Rectangle 29.png" alt="" id="vid1">
+                <img src="./img/Group 79.png" alt="" id="vid2">
+            </div>
+            <div class="jhikimiki">
+                <img src="./img/Frame (1).png" alt="">
+            </div>
+        </section>
+        <section>
+            <div class="container2">
+                <div class="texxxt">
+                    <h2>Why choose Pump Insta</h2>
+                <p>However, if they see other members in their social network actively participating, 
+                    it makes investing time into a social media profile both fun and easy. Pump Insta is here to help! Buy Instagram followers, likes and views that are delivered instantly and safely.</p>
+                </div>
+                <div class="fetdes">
+                    <div class="fetdes1">
+                        <div class="fetdes1img">
+                            
+<svg width="60" height="64" viewBox="0 0 60 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M30 28.5C22.5584 28.5 16.5 22.4416 16.5 15C16.5 7.55843 22.5584 1.5 30 1.5C37.4416 1.5 43.5 7.55843 43.5 15C43.5 22.4416 37.4416 28.5 30 28.5ZM58.5 60V61.8333H56.6667H1.5V60C1.5 47.965 11.2952 38.1667 23.3333 38.1667H36.6667C48.7016 38.1667 58.5 47.9651 58.5 60Z" stroke="#E90024" stroke-width="3"/>
+    </svg>
+                        </div>
+                        <div class="fetdes1txt">
+                            <h4>High Quality Profiles</h4>
+                            <p>When purchasing followers, likes, or views for your Instagram profile, you need those accounts to be of the highest quality. Pump Insta is famed for quality service and that’s why all our services are fulfilled with genuine users and high-quality profiles, so you know your Insta reputation is in good hands</p>
+                        </div>
+                    </div>
+                    <div class="fetdes2">
+                        <div class="fetdes2img">
+                            
+<svg width="70" height="63" viewBox="0 0 70 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M49 40H50.5V38.5V31.5V30H49H21H19.5V31.5V38.5V40H21H49ZM1.5 1.5H68.5V12.5H1.5V1.5ZM59.5 19H65V56C65 57.4587 64.4205 58.8576 63.3891 59.8891C62.3576 60.9205 60.9587 61.5 59.5 61.5H10.5C9.04131 61.5 7.64236 60.9205 6.61091 59.8891C5.57946 58.8576 5 57.4587 5 56V19H59.5Z" stroke="#E90024" stroke-width="3"/>
+    </svg>
+    
+                        </div>
+                        <div class="fetdes2txt">
+                            <h4>Instant Delivery</h4>
+                            <p>We know that time is money. So when you purchase from iDigic, you can expect delivery of your Instagram followers, likes, or views to begin within 30 seconds after payment. Having an issue? Our dedicated support team is available for you 24/7 over email and chat.</p>
+                        </div>
+                    </div>
+                    <div class="fetdes3">
+                        <div class="fetdes3img">
+                            
+<svg width="63" height="63" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M61.42 61.3622H1.60256C1.64958 60.8349 1.71845 60.1913 1.81901 59.4617C2.1079 57.3657 2.65342 54.5962 3.67373 51.8472C5.66035 46.4948 9.25327 41.6296 15.9292 41.3056C19.5824 45.7719 25.5004 49.1201 31.4571 49.1201C37.4432 49.1201 43.1234 45.7017 46.7357 41.1996C50.5458 41.3436 53.2927 42.623 55.3143 44.4266C57.4928 46.3701 58.9225 49.0081 59.848 51.7533C60.772 54.4937 61.1654 57.2581 61.3246 59.3544C61.3838 60.1345 61.4101 60.8161 61.42 61.3622Z" stroke="#E90024" stroke-width="3"/>
+    <path d="M39.742 31.3317C42.0911 27.4933 43.4865 22.9291 43.4865 19.9587C43.4865 14.3193 38.2712 9.44147 31.4454 9.4375L39.742 31.3317ZM39.742 31.3317C38.5782 33.2333 37.227 34.878 35.7813 36.0325M39.742 31.3317L35.7813 36.0325M35.7813 36.0325C34.3368 37.186 32.8758 37.7918 31.4454 37.7918M35.7813 36.0325L31.4454 37.7918M31.4454 37.7918C30.0187 37.7918 28.5599 37.1864 27.1163 36.0324M31.4454 37.7918L27.1163 36.0324M27.1163 36.0324C25.6717 34.8776 24.321 33.2324 23.1573 31.3304M27.1163 36.0324L23.1573 31.3304M23.1573 31.3304C20.8084 27.4911 19.4122 22.9269 19.4122 19.9587M23.1573 31.3304L19.4122 19.9587M19.4122 19.9587C19.4122 14.3145 24.6284 9.43788 31.4446 9.4375L19.4122 19.9587Z" stroke="#E90024" stroke-width="3"/>
+    <path d="M45.6441 11.9737V13.4683L47.1386 13.4737C48.0004 13.4769 48.7029 13.6826 49.1383 13.9354C49.4248 14.1017 49.5065 14.2246 49.5265 14.2653L49.5631 33.9373H44.8759V33.1179H47.2504H48.7504V31.6179V27.5662V26.0662H47.2504C47.1604 26.0662 47.0834 26.0734 47.024 26.0811C46.2025 26.0665 45.5313 25.8668 45.1085 25.6219C44.8164 25.4528 44.7342 25.3275 44.7145 25.2868V14.4835C44.7334 14.4307 44.7538 14.3664 44.7715 14.2925L44.8129 14.12V13.9425V10.8279C44.8129 11.1507 44.8957 10.1761 44.811 9.4439C44.7092 8.56467 44.3918 7.42596 43.5441 6.30894C41.8252 4.04411 38.2918 2.30736 31.4925 2.30736C24.688 2.30736 21.1196 4.04696 19.3459 6.28377C17.5916 8.49605 17.9399 10.8555 17.9399 10.8279V13.785V14.0739L18.0471 14.3421C18.0662 14.3897 18.0847 14.4319 18.1003 14.4661C18.1033 14.4726 18.1063 14.479 18.1092 14.4853V25.0601C18.0841 25.1031 17.9968 25.2162 17.7316 25.3678C17.2964 25.6166 16.596 25.8182 15.7425 25.8182C14.8892 25.8182 14.1914 25.6166 13.759 25.3687C13.4948 25.2172 13.4084 25.1043 13.3838 25.0615V14.3089C13.4074 14.2667 13.4922 14.1532 13.7579 14.0008C14.1736 13.7622 14.8378 13.5665 15.6542 13.5532C15.7055 13.559 15.7718 13.5643 15.8489 13.5643H17.3489V12.0643V9.41043C17.3489 9.40916 17.3488 9.40725 17.3488 9.40471C17.3476 9.27209 17.3313 7.41687 18.8935 5.57565C20.4557 3.73436 23.8772 1.58643 31.4925 1.58643C39.1121 1.58643 42.5356 3.7345 44.0988 5.57593C45.6617 7.41714 45.6453 9.27225 45.6441 9.40471C45.6441 9.40726 45.6441 9.40916 45.6441 9.41043V11.9737ZM49.5323 14.2798C49.5321 14.2798 49.5314 14.2779 49.5304 14.274C49.532 14.2778 49.5324 14.2798 49.5323 14.2798ZM16.0477 10.58L16.0463 10.5797L16.0477 10.58ZM44.7089 25.2727C44.7091 25.2727 44.7097 25.2744 44.7105 25.2779C44.7092 25.2745 44.7088 25.2727 44.7089 25.2727ZM18.1181 25.0411C18.1183 25.0411 18.1177 25.0433 18.1157 25.0476C18.117 25.0432 18.118 25.041 18.1181 25.0411ZM13.3751 25.0428C13.3753 25.0428 13.3763 25.045 13.3775 25.0495C13.3755 25.0452 13.3749 25.0429 13.3751 25.0428ZM13.3758 14.327C13.3756 14.3269 13.3762 14.3244 13.3783 14.3197C13.3771 14.3246 13.376 14.327 13.3758 14.327ZM15.5408 13.5368L15.5413 13.5369C15.5389 13.5365 15.5366 13.5361 15.5366 13.5361L15.5408 13.5368Z" stroke="#E90024" stroke-width="3"/>
+    </svg>
+                        </div>
+                        <div class="fetdes3txt">
+                            <h4>24/7 Customer Support</h4>
+                            <p>If you have any issues or doubts with our service, you can contact us at any time of the day. We work 24*7 in order to deliver the best possible service to you. Feel free to hit us up!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container3">
+              <div class="page4tppt">
+                <h2>How Pump Insta Work</h2>
+                <p>However, if they see other members in their social network actively participating, 
+                    it makes investing time into a social media profile both fun and easy. Pump Insta is here to help! Buy Instagram followers, likes and views that are delivered instantly and safely.</p>
+                 <img src="./img/XMLID_3_.png" alt="" id="page4tpptimg">   
+              </div>
+              <div class="advert">
+                <div class="advert1">
+                    <div class="save2">
+                        <h3>Save $2</h3>
+                    </div>
+                    <div class="advert1des">
+                        <h3>Instagram Followers</h3>
+                        <div class="tick">
+                            <ul>
+                                <li> 
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 13L9 17L19 7" stroke="#5EBD78" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg> Likes From Real Users</li>
+                                 <li>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5 13L9 17L19 7" stroke="#5EBD78" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg> Instant Start (No delay)
+                                 </li>
+                                 <li>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5 13L9 17L19 7" stroke="#5EBD78" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg> Control Delivery Speed
+                                 </li>
+                                 <li>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5 13L9 17L19 7" stroke="#5EBD78" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg> No Password Required
+                                 </li>   
+                            </ul>
+                        </div>
+                        <h2  id="advert1desh2">$9.95</h2>
+                        <button class="button2">
+                            Purchase
+                        </button>
+                    </div>
+                </div>
+                <div class="advert1">
+                    <div class="save2">
+                        <h3>Save $2</h3>
+                    </div>
+                    <div class="advert1des">
+                        <h3>Instagram Comments</h3>
+                        <div class="tick">
+                            <ul>
+                                <li> 
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 13L9 17L19 7" stroke="#5EBD78" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg> Likes From Real Users</li>
+                                 <li>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5 13L9 17L19 7" stroke="#5EBD78" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg> Instant Start (No delay)
+                                 </li>
+                                 <li>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5 13L9 17L19 7" stroke="#5EBD78" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg> Control Delivery Speed
+                                 </li>
+                                 <li>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5 13L9 17L19 7" stroke="#5EBD78" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg> No Password Required
+                                 </li>   
+                            </ul>
+                        </div>
+                        <h2  id="advert1desh23">$9.90</h2>
+                        <button class="button2">
+                            Purchase
+                        </button>
+                    </div>
+                </div>
+                <div class="advert1">
+                    <div class="save2">
+                        <h3>Save $2</h3>
+                    </div>
+                    <div class="advert1des">
+                        <h3>Instagram Likes</h3>
+                        <div class="tick">
+                            <ul>
+                                <li> 
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 13L9 17L19 7" stroke="#5EBD78" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg> Likes From Real Users</li>
+                                 <li>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5 13L9 17L19 7" stroke="#5EBD78" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg> Instant Start (No delay)
+                                 </li>
+                                 <li>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5 13L9 17L19 7" stroke="#5EBD78" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg> Control Delivery Speed
+                                 </li>
+                                 <li>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5 13L9 17L19 7" stroke="#5EBD78" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg> No Password Required
+                                 </li>   
+                            </ul>
+                        </div>
+                        <h2 id="advert1desh2">$9.95</h2>
+                        <button class="button2">
+                            Purchase
+                        </button>
+                    </div>
+                </div>
+              </div>
+             <div class="antxt">
+                <h2>Our Customer Rating</h2>
+                <p>However, if they see other members in their social network actively participating, 
+                    it makes investing time into a social media profile both fun and easy. Pump Insta is here to help! Buy Instagram followers, likes and views that are delivered instantly and safely.</p>
+               <img src="./img/XMLID_3_.png" alt="" id="jhikimiki2">     
+             </div>
+             <div class="cusrev">
+                <div class="cusrev1">
+                    <div class="cus1des">
+                        <img src="./img/Ellipse 3 (1).png" alt="">
+                        <h5>@Kiyan S.</h5>
+                        <div class="dots">
+                            <svg width="41" height="7" viewBox="0 0 41 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M36.9624 0.00019011C38.843 0.000190028 40.3549 1.51205 40.3549 3.39267C40.3549 5.27328 38.843 6.78516 36.9624 6.78516C35.0818 6.78516 33.5699 5.27328 33.5699 3.39267C33.5699 1.51205 35.0818 0.000190192 36.9624 0.00019011Z" fill="#787878"/>
+                                <path d="M20.1775 0.00019011C22.0581 0.000190028 23.5699 1.51205 23.5699 3.39267C23.5699 5.27328 22.0581 6.78516 20.1775 6.78516C18.2968 6.78516 16.785 5.27328 16.785 3.39267C16.785 1.51205 18.2968 0.000190192 20.1775 0.00019011Z" fill="#787878"/>
+                                <path d="M3.39248 0.00019011C5.2731 0.000190028 6.78497 1.51205 6.78497 3.39267C6.78497 5.27328 5.2731 6.78516 3.39248 6.78516C1.51187 6.78516 -6.60861e-08 5.27328 -1.4829e-07 3.39267C-2.30495e-07 1.51205 1.51187 0.000190192 3.39248 0.00019011Z" fill="#787878"/>
+                                </svg>
+                        </div>
+                    </div>
+                    <div class="cusrevdes1">
+                        <div class="stars">
+                            
+<svg width="111" height="18" viewBox="0 0 111 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M17.4182 6.33831L12.0222 5.51709L9.60999 0.396152C9.54411 0.255944 9.43572 0.142442 9.30183 0.0734507C8.96604 -0.100141 8.55799 0.0445188 8.39009 0.396152L5.97791 5.51709L0.581865 6.33831C0.433096 6.36057 0.297079 6.43401 0.192941 6.54529C0.0670438 6.68079 -0.00233122 6.86309 5.98176e-05 7.05213C0.00245086 7.24117 0.0764123 7.42149 0.205692 7.55345L4.10981 11.5394L3.18744 17.1677C3.16581 17.2987 3.17965 17.4333 3.22738 17.5564C3.27511 17.6795 3.35483 17.7862 3.4575 17.8643C3.56016 17.9424 3.68166 17.9887 3.80823 17.9982C3.9348 18.0077 4.06136 17.9798 4.17356 17.9177L9.00004 15.2605L13.8265 17.9177C13.9583 17.9912 14.1113 18.0157 14.258 17.989C14.6277 17.9222 14.8764 17.555 14.8126 17.1677L13.8903 11.5394L17.7944 7.55345C17.9007 7.4444 17.9708 7.30197 17.992 7.14618C18.0494 6.75671 17.7901 6.39618 17.4182 6.33831Z" fill="#FFA723"/>
+    <path d="M40.5611 6.33831L35.1651 5.51709L32.7529 0.396152C32.687 0.255944 32.5786 0.142442 32.4447 0.0734507C32.1089 -0.100141 31.7009 0.0445188 31.533 0.396152L29.1208 5.51709L23.7247 6.33831C23.576 6.36057 23.44 6.43401 23.3358 6.54529C23.2099 6.68079 23.1406 6.86309 23.1429 7.05213C23.1453 7.24117 23.2193 7.42149 23.3486 7.55345L27.2527 11.5394L26.3303 17.1677C26.3087 17.2987 26.3225 17.4333 26.3703 17.5564C26.418 17.6795 26.4977 17.7862 26.6004 17.8643C26.703 17.9424 26.8245 17.9887 26.9511 17.9982C27.0777 18.0077 27.2042 17.9798 27.3164 17.9177L32.1429 15.2605L36.9694 17.9177C37.1012 17.9912 37.2542 18.0157 37.4008 17.989C37.7706 17.9222 38.0193 17.555 37.9555 17.1677L37.0332 11.5394L40.9373 7.55345C41.0435 7.4444 41.1137 7.30197 41.1349 7.14618C41.1923 6.75671 40.933 6.39618 40.5611 6.33831Z" fill="#FFA723"/>
+    <path d="M63.7039 6.33831L58.3079 5.51709L55.8957 0.396152C55.8298 0.255944 55.7214 0.142442 55.5875 0.0734507C55.2517 -0.100141 54.8437 0.0445188 54.6758 0.396152L52.2636 5.51709L46.8676 6.33831C46.7188 6.36057 46.5828 6.43401 46.4786 6.54529C46.3527 6.68079 46.2834 6.86309 46.2858 7.05213C46.2882 7.24117 46.3621 7.42149 46.4914 7.55345L50.3955 11.5394L49.4731 17.1677C49.4515 17.2987 49.4654 17.4333 49.5131 17.5564C49.5608 17.6795 49.6405 17.7862 49.7432 17.8643C49.8459 17.9424 49.9674 17.9887 50.0939 17.9982C50.2205 18.0077 50.3471 17.9798 50.4593 17.9177L55.2857 15.2605L60.1122 17.9177C60.244 17.9912 60.397 18.0157 60.5437 17.989C60.9135 17.9222 61.1621 17.555 61.0984 17.1677L60.176 11.5394L64.0801 7.55345C64.1864 7.4444 64.2565 7.30197 64.2778 7.14618C64.3351 6.75671 64.0758 6.39618 63.7039 6.33831Z" fill="#FFA723"/>
+    <path d="M86.8468 6.33831L81.4508 5.51709L79.0386 0.396152C78.9727 0.255944 78.8643 0.142442 78.7304 0.0734507C78.3946 -0.100141 77.9866 0.0445188 77.8187 0.396152L75.4065 5.51709L70.0105 6.33831C69.8617 6.36057 69.7257 6.43401 69.6215 6.54529C69.4956 6.68079 69.4263 6.86309 69.4286 7.05213C69.431 7.24117 69.505 7.42149 69.6343 7.55345L73.5384 11.5394L72.616 17.1677C72.5944 17.2987 72.6082 17.4333 72.656 17.5564C72.7037 17.6795 72.7834 17.7862 72.8861 17.8643C72.9887 17.9424 73.1103 17.9887 73.2368 17.9982C73.3634 18.0077 73.4899 17.9798 73.6022 17.9177L78.4286 15.2605L83.2551 17.9177C83.3869 17.9912 83.5399 18.0157 83.6865 17.989C84.0563 17.9222 84.305 17.555 84.2412 17.1677L83.3189 11.5394L87.223 7.55345C87.3292 7.4444 87.3994 7.30197 87.4206 7.14618C87.478 6.75671 87.2187 6.39618 86.8468 6.33831Z" fill="#FFA723"/>
+    <path d="M109.99 6.33831L104.594 5.51709L102.181 0.396152C102.116 0.255944 102.007 0.142442 101.873 0.0734507C101.537 -0.100141 101.129 0.0445188 100.962 0.396152L98.5493 5.51709L93.1533 6.33831C93.0045 6.36057 92.8685 6.43401 92.7644 6.54529C92.6385 6.68079 92.5691 6.86309 92.5715 7.05213C92.5739 7.24117 92.6478 7.42149 92.7771 7.55345L96.6812 11.5394L95.7589 17.1677C95.7372 17.2987 95.7511 17.4333 95.7988 17.5564C95.8465 17.6795 95.9262 17.7862 96.0289 17.8643C96.1316 17.9424 96.2531 17.9887 96.3796 17.9982C96.5062 18.0077 96.6328 17.9798 96.745 17.9177L101.571 15.2605L106.398 17.9177C106.53 17.9912 106.683 18.0157 106.829 17.989C107.199 17.9222 107.448 17.555 107.384 17.1677L106.462 11.5394L110.366 7.55345C110.472 7.4444 110.542 7.30197 110.563 7.14618C110.621 6.75671 110.362 6.39618 109.99 6.33831Z" fill="#FFA723"/>
+    </svg>
+    
+                        </div>
+                        <p>However, if they see other members in their social network actively participating,  it makes investing time into a social media profile both fun and easy. Pump Insta is here to help!</p>
+                    </div>
+                    <div class="cusicons">
+                        
+<svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M2.31798 2.31804C1.90011 2.7359 1.56864 3.23198 1.34249 3.77795C1.11634 4.32392 0.999939 4.90909 0.999939 5.50004C0.999939 6.09099 1.11634 6.67616 1.34249 7.22213C1.56864 7.7681 1.90011 8.26417 2.31798 8.68204L9.99998 16.364L17.682 8.68204C18.5259 7.83812 19 6.69352 19 5.50004C19 4.30656 18.5259 3.16196 17.682 2.31804C16.8381 1.47412 15.6935 1.00001 14.5 1.00001C13.3065 1.00001 12.1619 1.47412 11.318 2.31804L9.99998 3.63604L8.68198 2.31804C8.26411 1.90017 7.76803 1.5687 7.22207 1.34255C6.6761 1.1164 6.09093 1 5.49998 1C4.90903 1 4.32386 1.1164 3.77789 1.34255C3.23192 1.5687 2.73584 1.90017 2.31798 2.31804V2.31804Z" stroke="#787878" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8 10H8.01H8ZM12 10H12.01H12ZM16 10H16.01H16ZM9 16H5C4.46957 16 3.96086 15.7893 3.58579 15.4142C3.21071 15.0391 3 14.5304 3 14V6C3 5.46957 3.21071 4.96086 3.58579 4.58579C3.96086 4.21071 4.46957 4 5 4H19C19.5304 4 20.0391 4.21071 20.4142 4.58579C20.7893 4.96086 21 5.46957 21 6V14C21 14.5304 20.7893 15.0391 20.4142 15.4142C20.0391 15.7893 19.5304 16 19 16H14L9 21V16Z" stroke="#787878" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g clip-path="url(#clip0_1_568)">
+    <path d="M11.4455 20.0398L16.617 14.8682M11.4455 20.0398L15.9706 27.1507L21.7886 9.69668L4.33455 15.5147L11.4455 20.0398Z" stroke="#787878" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <defs>
+    <clipPath id="clip0_1_568">
+    <rect width="21.9411" height="21.9411" fill="white" transform="translate(15.9706) rotate(45)"/>
+    </clipPath>
+    </defs>
+    </svg>
+
+    <svg id="abnormalsvg" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4.375 4.375C4.375 3.91087 4.55937 3.46575 4.88756 3.13756C5.21575 2.80937 5.66087 2.625 6.125 2.625H14.875C15.3391 2.625 15.7842 2.80937 16.1124 3.13756C16.4406 3.46575 16.625 3.91087 16.625 4.375V18.375L10.5 15.3125L4.375 18.375V4.375Z" stroke="#787878" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>                  
+                    </div>
+                </div>
+                <div class="cusrev1">
+                    <div class="cus1des">
+                        <img src="./img/Ellipse 3 (2).png" alt="">
+                        <h5>Emmett Bowers</h5>
+                        <div class="dots">
+                            <svg width="41" height="7" viewBox="0 0 41 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M36.9624 0.00019011C38.843 0.000190028 40.3549 1.51205 40.3549 3.39267C40.3549 5.27328 38.843 6.78516 36.9624 6.78516C35.0818 6.78516 33.5699 5.27328 33.5699 3.39267C33.5699 1.51205 35.0818 0.000190192 36.9624 0.00019011Z" fill="#787878"/>
+                                <path d="M20.1775 0.00019011C22.0581 0.000190028 23.5699 1.51205 23.5699 3.39267C23.5699 5.27328 22.0581 6.78516 20.1775 6.78516C18.2968 6.78516 16.785 5.27328 16.785 3.39267C16.785 1.51205 18.2968 0.000190192 20.1775 0.00019011Z" fill="#787878"/>
+                                <path d="M3.39248 0.00019011C5.2731 0.000190028 6.78497 1.51205 6.78497 3.39267C6.78497 5.27328 5.2731 6.78516 3.39248 6.78516C1.51187 6.78516 -6.60861e-08 5.27328 -1.4829e-07 3.39267C-2.30495e-07 1.51205 1.51187 0.000190192 3.39248 0.00019011Z" fill="#787878"/>
+                                </svg>
+                        </div>
+                    </div>
+                    <div class="cusrevdes1">
+                        <div class="stars">
+                            
+<svg width="111" height="18" viewBox="0 0 111 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M17.4182 6.33831L12.0222 5.51709L9.60999 0.396152C9.54411 0.255944 9.43572 0.142442 9.30183 0.0734507C8.96604 -0.100141 8.55799 0.0445188 8.39009 0.396152L5.97791 5.51709L0.581865 6.33831C0.433096 6.36057 0.297079 6.43401 0.192941 6.54529C0.0670438 6.68079 -0.00233122 6.86309 5.98176e-05 7.05213C0.00245086 7.24117 0.0764123 7.42149 0.205692 7.55345L4.10981 11.5394L3.18744 17.1677C3.16581 17.2987 3.17965 17.4333 3.22738 17.5564C3.27511 17.6795 3.35483 17.7862 3.4575 17.8643C3.56016 17.9424 3.68166 17.9887 3.80823 17.9982C3.9348 18.0077 4.06136 17.9798 4.17356 17.9177L9.00004 15.2605L13.8265 17.9177C13.9583 17.9912 14.1113 18.0157 14.258 17.989C14.6277 17.9222 14.8764 17.555 14.8126 17.1677L13.8903 11.5394L17.7944 7.55345C17.9007 7.4444 17.9708 7.30197 17.992 7.14618C18.0494 6.75671 17.7901 6.39618 17.4182 6.33831Z" fill="#FFA723"/>
+    <path d="M40.5611 6.33831L35.1651 5.51709L32.7529 0.396152C32.687 0.255944 32.5786 0.142442 32.4447 0.0734507C32.1089 -0.100141 31.7009 0.0445188 31.533 0.396152L29.1208 5.51709L23.7247 6.33831C23.576 6.36057 23.44 6.43401 23.3358 6.54529C23.2099 6.68079 23.1406 6.86309 23.1429 7.05213C23.1453 7.24117 23.2193 7.42149 23.3486 7.55345L27.2527 11.5394L26.3303 17.1677C26.3087 17.2987 26.3225 17.4333 26.3703 17.5564C26.418 17.6795 26.4977 17.7862 26.6004 17.8643C26.703 17.9424 26.8245 17.9887 26.9511 17.9982C27.0777 18.0077 27.2042 17.9798 27.3164 17.9177L32.1429 15.2605L36.9694 17.9177C37.1012 17.9912 37.2542 18.0157 37.4008 17.989C37.7706 17.9222 38.0193 17.555 37.9555 17.1677L37.0332 11.5394L40.9373 7.55345C41.0435 7.4444 41.1137 7.30197 41.1349 7.14618C41.1923 6.75671 40.933 6.39618 40.5611 6.33831Z" fill="#FFA723"/>
+    <path d="M63.7039 6.33831L58.3079 5.51709L55.8957 0.396152C55.8298 0.255944 55.7214 0.142442 55.5875 0.0734507C55.2517 -0.100141 54.8437 0.0445188 54.6758 0.396152L52.2636 5.51709L46.8676 6.33831C46.7188 6.36057 46.5828 6.43401 46.4786 6.54529C46.3527 6.68079 46.2834 6.86309 46.2858 7.05213C46.2882 7.24117 46.3621 7.42149 46.4914 7.55345L50.3955 11.5394L49.4731 17.1677C49.4515 17.2987 49.4654 17.4333 49.5131 17.5564C49.5608 17.6795 49.6405 17.7862 49.7432 17.8643C49.8459 17.9424 49.9674 17.9887 50.0939 17.9982C50.2205 18.0077 50.3471 17.9798 50.4593 17.9177L55.2857 15.2605L60.1122 17.9177C60.244 17.9912 60.397 18.0157 60.5437 17.989C60.9135 17.9222 61.1621 17.555 61.0984 17.1677L60.176 11.5394L64.0801 7.55345C64.1864 7.4444 64.2565 7.30197 64.2778 7.14618C64.3351 6.75671 64.0758 6.39618 63.7039 6.33831Z" fill="#FFA723"/>
+    <path d="M86.8468 6.33831L81.4508 5.51709L79.0386 0.396152C78.9727 0.255944 78.8643 0.142442 78.7304 0.0734507C78.3946 -0.100141 77.9866 0.0445188 77.8187 0.396152L75.4065 5.51709L70.0105 6.33831C69.8617 6.36057 69.7257 6.43401 69.6215 6.54529C69.4956 6.68079 69.4263 6.86309 69.4286 7.05213C69.431 7.24117 69.505 7.42149 69.6343 7.55345L73.5384 11.5394L72.616 17.1677C72.5944 17.2987 72.6082 17.4333 72.656 17.5564C72.7037 17.6795 72.7834 17.7862 72.8861 17.8643C72.9887 17.9424 73.1103 17.9887 73.2368 17.9982C73.3634 18.0077 73.4899 17.9798 73.6022 17.9177L78.4286 15.2605L83.2551 17.9177C83.3869 17.9912 83.5399 18.0157 83.6865 17.989C84.0563 17.9222 84.305 17.555 84.2412 17.1677L83.3189 11.5394L87.223 7.55345C87.3292 7.4444 87.3994 7.30197 87.4206 7.14618C87.478 6.75671 87.2187 6.39618 86.8468 6.33831Z" fill="#FFA723"/>
+    <path d="M109.99 6.33831L104.594 5.51709L102.181 0.396152C102.116 0.255944 102.007 0.142442 101.873 0.0734507C101.537 -0.100141 101.129 0.0445188 100.962 0.396152L98.5493 5.51709L93.1533 6.33831C93.0045 6.36057 92.8685 6.43401 92.7644 6.54529C92.6385 6.68079 92.5691 6.86309 92.5715 7.05213C92.5739 7.24117 92.6478 7.42149 92.7771 7.55345L96.6812 11.5394L95.7589 17.1677C95.7372 17.2987 95.7511 17.4333 95.7988 17.5564C95.8465 17.6795 95.9262 17.7862 96.0289 17.8643C96.1316 17.9424 96.2531 17.9887 96.3796 17.9982C96.5062 18.0077 96.6328 17.9798 96.745 17.9177L101.571 15.2605L106.398 17.9177C106.53 17.9912 106.683 18.0157 106.829 17.989C107.199 17.9222 107.448 17.555 107.384 17.1677L106.462 11.5394L110.366 7.55345C110.472 7.4444 110.542 7.30197 110.563 7.14618C110.621 6.75671 110.362 6.39618 109.99 6.33831Z" fill="#FFA723"/>
+    </svg>
+    
+                        </div>
+                        <p>However, if they see other members in their social network actively participating,  it makes investing time into a social media profile both fun and easy. Pump Insta is here to help!</p>
+                    </div>
+                    <div class="cusicons">
+                        
+<svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M2.31798 2.31804C1.90011 2.7359 1.56864 3.23198 1.34249 3.77795C1.11634 4.32392 0.999939 4.90909 0.999939 5.50004C0.999939 6.09099 1.11634 6.67616 1.34249 7.22213C1.56864 7.7681 1.90011 8.26417 2.31798 8.68204L9.99998 16.364L17.682 8.68204C18.5259 7.83812 19 6.69352 19 5.50004C19 4.30656 18.5259 3.16196 17.682 2.31804C16.8381 1.47412 15.6935 1.00001 14.5 1.00001C13.3065 1.00001 12.1619 1.47412 11.318 2.31804L9.99998 3.63604L8.68198 2.31804C8.26411 1.90017 7.76803 1.5687 7.22207 1.34255C6.6761 1.1164 6.09093 1 5.49998 1C4.90903 1 4.32386 1.1164 3.77789 1.34255C3.23192 1.5687 2.73584 1.90017 2.31798 2.31804V2.31804Z" stroke="#787878" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8 10H8.01H8ZM12 10H12.01H12ZM16 10H16.01H16ZM9 16H5C4.46957 16 3.96086 15.7893 3.58579 15.4142C3.21071 15.0391 3 14.5304 3 14V6C3 5.46957 3.21071 4.96086 3.58579 4.58579C3.96086 4.21071 4.46957 4 5 4H19C19.5304 4 20.0391 4.21071 20.4142 4.58579C20.7893 4.96086 21 5.46957 21 6V14C21 14.5304 20.7893 15.0391 20.4142 15.4142C20.0391 15.7893 19.5304 16 19 16H14L9 21V16Z" stroke="#787878" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g clip-path="url(#clip0_1_568)">
+    <path d="M11.4455 20.0398L16.617 14.8682M11.4455 20.0398L15.9706 27.1507L21.7886 9.69668L4.33455 15.5147L11.4455 20.0398Z" stroke="#787878" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <defs>
+    <clipPath id="clip0_1_568">
+    <rect width="21.9411" height="21.9411" fill="white" transform="translate(15.9706) rotate(45)"/>
+    </clipPath>
+    </defs>
+    </svg>
+
+    <svg id="abnormalsvg" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4.375 4.375C4.375 3.91087 4.55937 3.46575 4.88756 3.13756C5.21575 2.80937 5.66087 2.625 6.125 2.625H14.875C15.3391 2.625 15.7842 2.80937 16.1124 3.13756C16.4406 3.46575 16.625 3.91087 16.625 4.375V18.375L10.5 15.3125L4.375 18.375V4.375Z" stroke="#787878" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>                  
+                    </div>
+                </div>
+
+                <div class="cusrev1">
+                    <div class="cus1des">
+                        <img src="./img/Ellipse 3.png" alt="">
+                        <h5>Lynn Patterson</h5>
+                        <div class="dots">
+                            <svg width="41" height="7" viewBox="0 0 41 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M36.9624 0.00019011C38.843 0.000190028 40.3549 1.51205 40.3549 3.39267C40.3549 5.27328 38.843 6.78516 36.9624 6.78516C35.0818 6.78516 33.5699 5.27328 33.5699 3.39267C33.5699 1.51205 35.0818 0.000190192 36.9624 0.00019011Z" fill="#787878"/>
+                                <path d="M20.1775 0.00019011C22.0581 0.000190028 23.5699 1.51205 23.5699 3.39267C23.5699 5.27328 22.0581 6.78516 20.1775 6.78516C18.2968 6.78516 16.785 5.27328 16.785 3.39267C16.785 1.51205 18.2968 0.000190192 20.1775 0.00019011Z" fill="#787878"/>
+                                <path d="M3.39248 0.00019011C5.2731 0.000190028 6.78497 1.51205 6.78497 3.39267C6.78497 5.27328 5.2731 6.78516 3.39248 6.78516C1.51187 6.78516 -6.60861e-08 5.27328 -1.4829e-07 3.39267C-2.30495e-07 1.51205 1.51187 0.000190192 3.39248 0.00019011Z" fill="#787878"/>
+                                </svg>
+                        </div>
+                    </div>
+                    <div class="cusrevdes1">
+                        <div class="stars">
+                            
+<svg width="111" height="18" viewBox="0 0 111 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M17.4182 6.33831L12.0222 5.51709L9.60999 0.396152C9.54411 0.255944 9.43572 0.142442 9.30183 0.0734507C8.96604 -0.100141 8.55799 0.0445188 8.39009 0.396152L5.97791 5.51709L0.581865 6.33831C0.433096 6.36057 0.297079 6.43401 0.192941 6.54529C0.0670438 6.68079 -0.00233122 6.86309 5.98176e-05 7.05213C0.00245086 7.24117 0.0764123 7.42149 0.205692 7.55345L4.10981 11.5394L3.18744 17.1677C3.16581 17.2987 3.17965 17.4333 3.22738 17.5564C3.27511 17.6795 3.35483 17.7862 3.4575 17.8643C3.56016 17.9424 3.68166 17.9887 3.80823 17.9982C3.9348 18.0077 4.06136 17.9798 4.17356 17.9177L9.00004 15.2605L13.8265 17.9177C13.9583 17.9912 14.1113 18.0157 14.258 17.989C14.6277 17.9222 14.8764 17.555 14.8126 17.1677L13.8903 11.5394L17.7944 7.55345C17.9007 7.4444 17.9708 7.30197 17.992 7.14618C18.0494 6.75671 17.7901 6.39618 17.4182 6.33831Z" fill="#FFA723"/>
+    <path d="M40.5611 6.33831L35.1651 5.51709L32.7529 0.396152C32.687 0.255944 32.5786 0.142442 32.4447 0.0734507C32.1089 -0.100141 31.7009 0.0445188 31.533 0.396152L29.1208 5.51709L23.7247 6.33831C23.576 6.36057 23.44 6.43401 23.3358 6.54529C23.2099 6.68079 23.1406 6.86309 23.1429 7.05213C23.1453 7.24117 23.2193 7.42149 23.3486 7.55345L27.2527 11.5394L26.3303 17.1677C26.3087 17.2987 26.3225 17.4333 26.3703 17.5564C26.418 17.6795 26.4977 17.7862 26.6004 17.8643C26.703 17.9424 26.8245 17.9887 26.9511 17.9982C27.0777 18.0077 27.2042 17.9798 27.3164 17.9177L32.1429 15.2605L36.9694 17.9177C37.1012 17.9912 37.2542 18.0157 37.4008 17.989C37.7706 17.9222 38.0193 17.555 37.9555 17.1677L37.0332 11.5394L40.9373 7.55345C41.0435 7.4444 41.1137 7.30197 41.1349 7.14618C41.1923 6.75671 40.933 6.39618 40.5611 6.33831Z" fill="#FFA723"/>
+    <path d="M63.7039 6.33831L58.3079 5.51709L55.8957 0.396152C55.8298 0.255944 55.7214 0.142442 55.5875 0.0734507C55.2517 -0.100141 54.8437 0.0445188 54.6758 0.396152L52.2636 5.51709L46.8676 6.33831C46.7188 6.36057 46.5828 6.43401 46.4786 6.54529C46.3527 6.68079 46.2834 6.86309 46.2858 7.05213C46.2882 7.24117 46.3621 7.42149 46.4914 7.55345L50.3955 11.5394L49.4731 17.1677C49.4515 17.2987 49.4654 17.4333 49.5131 17.5564C49.5608 17.6795 49.6405 17.7862 49.7432 17.8643C49.8459 17.9424 49.9674 17.9887 50.0939 17.9982C50.2205 18.0077 50.3471 17.9798 50.4593 17.9177L55.2857 15.2605L60.1122 17.9177C60.244 17.9912 60.397 18.0157 60.5437 17.989C60.9135 17.9222 61.1621 17.555 61.0984 17.1677L60.176 11.5394L64.0801 7.55345C64.1864 7.4444 64.2565 7.30197 64.2778 7.14618C64.3351 6.75671 64.0758 6.39618 63.7039 6.33831Z" fill="#FFA723"/>
+    <path d="M86.8468 6.33831L81.4508 5.51709L79.0386 0.396152C78.9727 0.255944 78.8643 0.142442 78.7304 0.0734507C78.3946 -0.100141 77.9866 0.0445188 77.8187 0.396152L75.4065 5.51709L70.0105 6.33831C69.8617 6.36057 69.7257 6.43401 69.6215 6.54529C69.4956 6.68079 69.4263 6.86309 69.4286 7.05213C69.431 7.24117 69.505 7.42149 69.6343 7.55345L73.5384 11.5394L72.616 17.1677C72.5944 17.2987 72.6082 17.4333 72.656 17.5564C72.7037 17.6795 72.7834 17.7862 72.8861 17.8643C72.9887 17.9424 73.1103 17.9887 73.2368 17.9982C73.3634 18.0077 73.4899 17.9798 73.6022 17.9177L78.4286 15.2605L83.2551 17.9177C83.3869 17.9912 83.5399 18.0157 83.6865 17.989C84.0563 17.9222 84.305 17.555 84.2412 17.1677L83.3189 11.5394L87.223 7.55345C87.3292 7.4444 87.3994 7.30197 87.4206 7.14618C87.478 6.75671 87.2187 6.39618 86.8468 6.33831Z" fill="#FFA723"/>
+    <path d="M109.99 6.33831L104.594 5.51709L102.181 0.396152C102.116 0.255944 102.007 0.142442 101.873 0.0734507C101.537 -0.100141 101.129 0.0445188 100.962 0.396152L98.5493 5.51709L93.1533 6.33831C93.0045 6.36057 92.8685 6.43401 92.7644 6.54529C92.6385 6.68079 92.5691 6.86309 92.5715 7.05213C92.5739 7.24117 92.6478 7.42149 92.7771 7.55345L96.6812 11.5394L95.7589 17.1677C95.7372 17.2987 95.7511 17.4333 95.7988 17.5564C95.8465 17.6795 95.9262 17.7862 96.0289 17.8643C96.1316 17.9424 96.2531 17.9887 96.3796 17.9982C96.5062 18.0077 96.6328 17.9798 96.745 17.9177L101.571 15.2605L106.398 17.9177C106.53 17.9912 106.683 18.0157 106.829 17.989C107.199 17.9222 107.448 17.555 107.384 17.1677L106.462 11.5394L110.366 7.55345C110.472 7.4444 110.542 7.30197 110.563 7.14618C110.621 6.75671 110.362 6.39618 109.99 6.33831Z" fill="#FFA723"/>
+    </svg>
+    
+                        </div>
+                        <p>However, if they see other members in their social network actively participating,  it makes investing time into a social media profile both fun and easy. Pump Insta is here to help!</p>
+                    </div>
+                    <div class="cusicons">
+                        
+<svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M2.31798 2.31804C1.90011 2.7359 1.56864 3.23198 1.34249 3.77795C1.11634 4.32392 0.999939 4.90909 0.999939 5.50004C0.999939 6.09099 1.11634 6.67616 1.34249 7.22213C1.56864 7.7681 1.90011 8.26417 2.31798 8.68204L9.99998 16.364L17.682 8.68204C18.5259 7.83812 19 6.69352 19 5.50004C19 4.30656 18.5259 3.16196 17.682 2.31804C16.8381 1.47412 15.6935 1.00001 14.5 1.00001C13.3065 1.00001 12.1619 1.47412 11.318 2.31804L9.99998 3.63604L8.68198 2.31804C8.26411 1.90017 7.76803 1.5687 7.22207 1.34255C6.6761 1.1164 6.09093 1 5.49998 1C4.90903 1 4.32386 1.1164 3.77789 1.34255C3.23192 1.5687 2.73584 1.90017 2.31798 2.31804V2.31804Z" stroke="#787878" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8 10H8.01H8ZM12 10H12.01H12ZM16 10H16.01H16ZM9 16H5C4.46957 16 3.96086 15.7893 3.58579 15.4142C3.21071 15.0391 3 14.5304 3 14V6C3 5.46957 3.21071 4.96086 3.58579 4.58579C3.96086 4.21071 4.46957 4 5 4H19C19.5304 4 20.0391 4.21071 20.4142 4.58579C20.7893 4.96086 21 5.46957 21 6V14C21 14.5304 20.7893 15.0391 20.4142 15.4142C20.0391 15.7893 19.5304 16 19 16H14L9 21V16Z" stroke="#787878" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g clip-path="url(#clip0_1_568)">
+    <path d="M11.4455 20.0398L16.617 14.8682M11.4455 20.0398L15.9706 27.1507L21.7886 9.69668L4.33455 15.5147L11.4455 20.0398Z" stroke="#787878" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <defs>
+    <clipPath id="clip0_1_568">
+    <rect width="21.9411" height="21.9411" fill="white" transform="translate(15.9706) rotate(45)"/>
+    </clipPath>
+    </defs>
+    </svg>
+
+    <svg id="abnormalsvg" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4.375 4.375C4.375 3.91087 4.55937 3.46575 4.88756 3.13756C5.21575 2.80937 5.66087 2.625 6.125 2.625H14.875C15.3391 2.625 15.7842 2.80937 16.1124 3.13756C16.4406 3.46575 16.625 3.91087 16.625 4.375V18.375L10.5 15.3125L4.375 18.375V4.375Z" stroke="#787878" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>                  
+                    </div>
+                </div>
+
+             </div>
+        </section>
+        <section class="container1">
+            <div class="lstxt">
+                <h2>Everything You Need to Know</h2>
+                <p>However, if they see other members in their social network actively participating, 
+                    it makes investing time into a social media profile both fun and easy. Pump Insta is here to help! Buy Instagram followers, likes and views that are delivered instantly and safely.</p>
+            </div>
+            <div class="questanaries">
+                    <div class="quesc1">
+                        <div class="ques1">
+                            <input type="checkbox" id="title1" />
+                            <label for="title1">Is There Any Risk To My Account?</label>
+    
+                            <div class="content">
+                            <p>However, if they see other members in their social network actively participating,  it makes investing time into a social media profile both fun and easy. Pump Insta is here to help! it makes investing time into a social media profile both fun and easy. Pump Insta is here to help!</p>
+                            </div>
+                        </div>
+    
+                        <div class="ques1">
+                            <input type="checkbox" id="title2" />
+                            <label for="title2">How Are You Different From Other Services?</label>
+    
+                            <div class="content">
+                            <p>However, if they see other members in their social network actively participating,  it makes investing time into a social media profile both fun and easy. Pump Insta is here to help! it makes investing time into a social media profile both fun and easy. Pump Insta is here to help!</p>
+                            </div>
+                        </div>
+    
+                        <div class="ques1">
+                            <input type="checkbox" id="title3" />
+                            <label for="title3">Do You Follow / Unfollow?</label>
+    
+                            <div class="content">
+                            <p>However, if they see other members in their social network actively participating,  it makes investing time into a social media profile both fun and easy. Pump Insta is here to help! it makes investing time into a social media profile both fun and easy. Pump Insta is here to help!</p>
+                            </div>
+                        </div>
+    
+    
+                    </div>
+
+                    <div class="quesc2">
+                        <div class="ques1">
+                            <input type="checkbox" id="title4" />
+                            <label for="title4">Is There Any Risk To My Account?</label>
+    
+                            <div class="content">
+                            <p>However, if they see other members in their social network actively participating,  it makes investing time into a social media profile both fun and easy. Pump Insta is here to help! it makes investing time into a social media profile both fun and easy. Pump Insta is here to help!</p>
+                            </div>
+                        </div>
+    
+                        <div class="ques1">
+                            <input type="checkbox" id="title5" />
+                            <label for="title5">How Are You Different From Other Services?</label>
+    
+                            <div class="content">
+                            <p>However, if they see other members in their social network actively participating,  it makes investing time into a social media profile both fun and easy. Pump Insta is here to help! it makes investing time into a social media profile both fun and easy. Pump Insta is here to help!</p>
+                            </div>
+                        </div>
+    
+                        <div class="ques1">
+                            <input type="checkbox" id="title6" />
+                            <label for="title6">Do You Follow / Unfollow?</label>
+    
+                            <div class="content">
+                            <p>However, if they see other members in their social network actively participating,  it makes investing time into a social media profile both fun and easy. Pump Insta is here to help! it makes investing time into a social media profile both fun and easy. Pump Insta is here to help!</p>
+                            </div>
+                        </div>
+
+                        <div class="ques1">
+                            <input type="checkbox" id="title7" />
+                            <label for="title7">Do You Follow / Unfollow?</label>
+    
+                            <div class="content">
+                            <p>However, if they see other members in their social network actively participating,  it makes investing time into a social media profile both fun and easy. Pump Insta is here to help! it makes investing time into a social media profile both fun and easy. Pump Insta is here to help!</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
